@@ -4,7 +4,7 @@ markdown: kramdown
 pygments: true
 paginate: 10
 paginate_path: "page:num"
-permalink: /
+permalink: pretty
 
 title: 技术人生
 baseurl: /
