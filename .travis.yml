@@ -8,6 +8,7 @@ script:
   - bundle exec jekyll build
 after_success:
   - ls
+  - git checkout -b gh-pages master
   - git config user.name "zhouchangxun"
   - git config user.email "changxunzhou@qq.com"
   - git add --all .
