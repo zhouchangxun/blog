@@ -1,8 +1,38 @@
----
-layout: page
-title: Wiki
----
-<div class="wiki">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wiki | 技术人生</title>
+    <base href="/blog/" />
+    <base target="_self" />
+    <meta name="author" content="Sixloop" />
+    <meta name="description" content="Xun's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml" />
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="./">首页</a>		
+            <a class="home-menu-icon" href="./">技术</a>
+            <a class="home-menu-icon" href="./opinion/">生活</a>
+            <a class="home-menu-icon" href="./me/1986/08/29/about-me/">关于我</a>
+            <!--
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+            -->
+        </div>
+        
+        <div class="home-contact">
+        </div>
+        
+    </div>
+
+    <div id="content">
+    <div class="wiki">
     <h2>Javascript</h2>
     <ul class="hide">
         <li><a href="http://jqfundamentals.com/book/index.html">jQuery Fundamentals</a> - jQuery 入门教程。</li>
@@ -427,3 +457,23 @@ title: Wiki
         });
     });
 </script>
+
+
+</div>
+
+
+    <script type="text/javascript">
+        $(function(){
+            $('.home-follow').click(function(e){
+                e.preventDefault();
+
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
