@@ -1,4 +1,6 @@
 auto: true
+source: ./ 
+destination: ../_site
 
 markdown: kramdown
 highlighter: rouge
