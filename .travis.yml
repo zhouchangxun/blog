@@ -11,8 +11,8 @@ after_success:
   - git config user.name "zhouchangxun"
   - git config user.email "changxunzhou@qq.com"
   - ls
-  - git rm * -rf
-  - git mv ../_site/* .
+  - rm -rf *
+  - mv ../_site/* .
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git push --force https://$DEPLOY_TOKEN@github.com/zhouchangxun/blog.git gh-pages
