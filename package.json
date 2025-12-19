@@ -1,0 +1,14 @@
+{
+  "name": "zhouchangxung.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "dev": "obook dev",
+    "build": "obook build"
+  },
+  "obook": {
+    "input": "./_preview.html",
+    "output": "./dist"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "logo": {
+    "text": "chance"
+  },
+  "navs": [
+    {
+      "name": "教学",
+      "summary": "./nav1/SUMMARY.md"
+    },
+    {
+      "name": "生活",
+      "summary": "./nav2/SUMMARY.md"
+    }
+  ],
+  "footer": "./footer.md"
+}
